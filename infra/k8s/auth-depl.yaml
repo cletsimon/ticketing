@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: cletsimon/auth
+          image: us.gcr.io/ticketing-dev-277714/auth
 ---
 apiVersion: v1
 kind: Service
