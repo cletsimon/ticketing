@@ -42,7 +42,7 @@ router.post(
         id: user.id,
         email: user.email
       },
-      'asdf'
+      process.env.JWT_KEY! // ! (exclamation means that we inform typscript that we already check this)
     );
 
     // store it on session object
