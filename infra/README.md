@@ -32,3 +32,44 @@ Check Pod
 ```
 k describe pod [pod-name]
 ```
+
+Get Namepacess
+
+```
+kubectl get namespace
+```
+
+Get specific services from a Namepsace
+
+```
+kubectl get services -n namespace
+```
+
+Cross namespace communcation uses a a different patter
+http://SERVICENAME.NAMESPACE.svc.cluster.local
+
+```
+http://ingress-nginx.ingress-nginx-controller.svc.cluster.local
+```
+
+External Name Service ?
+
+Rule of thumb for the requests:
+
+1. Request from a component
+
+- Always issued from the browser, so use a domain of ''
+
+2. Request from getInitialProps
+
+- Might be executed from the client or the server! Need to figure out what our env is so we can use the corret domain
+
+getInitialProps executed on the server
+
+- Hard refresh of page
+- Clicking link from different domain
+- Typing URL into address bar
+
+getInitialProps executed on the client
+
+- Navigating from one page to another while in the app
