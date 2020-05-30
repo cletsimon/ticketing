@@ -49,7 +49,7 @@ Cross namespace communcation uses a a different patter
 http://SERVICENAME.NAMESPACE.svc.cluster.local
 
 ```
-http://ingress-nginx.ingress-nginx-controller.svc.cluster.local
+http://ingress-nginx-controller.ingress-nginx-controller.svc.cluster.local
 ```
 
 External Name Service ?
