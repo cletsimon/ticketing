@@ -3,3 +3,4 @@ client/node_modules
 tickets/node_modules
 client/.next
 todo.md
+.DS_Store
