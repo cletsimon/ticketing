@@ -76,3 +76,13 @@ getInitialProps executed on the client
 
 Common Code
 https://www.npmjs.com/package/@tiktix/common
+
+App Overview
+
+1. Create package.json, install deps (copy from previous project)
+2. Write Dockerfile (copy from previous project)
+3. Create index.ts to run project (copy from previous project)
+4. Build image, push to docker hub
+5. Write k8s file for deployment, service
+6. Update skaffold.yaml to do file sync for tickets
+7. Write k8s file for Mongodb deployment, service
