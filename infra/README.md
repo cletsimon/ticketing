@@ -86,3 +86,10 @@ App Overview
 5. Write k8s file for deployment, service
 6. Update skaffold.yaml to do file sync for tickets
 7. Write k8s file for Mongodb deployment, service
+
+NATS Streaming Server
+docs.nats.io
+
+- NATS and NATS Streaming Server are two different things
+- NATS Streaming implements some extraodinarily important design decisions that will affect our app
+- We are going to run the official `nats-streaming` docker image in kubernetes.
