@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import { app } from './app';
+import { natsWrapper } from './nats-wrapper';
 
 const start = async () => {
   // check if env key is set
@@ -12,12 +13,13 @@ const start = async () => {
   }
 
   try {
+    await natsWrapper.connect('ticketing', 'sdfsdf', 'http://nats-srv:4222');
     await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
     });
-    console.log('connected');
+    console.log('connected to MongoDb');
   } catch (err) {
     console.error(err);
   }
