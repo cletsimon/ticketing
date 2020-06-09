@@ -4,11 +4,8 @@ import { app } from '../../app';
 import { Order, OrderStatus } from '../../models/order';
 import { Ticket } from '../../models/ticket';
 
-/**
- * TODO
- * test if the user is authenticated
- * test if valid ticket ID
- */
+it.todo('test if the user is authenticated');
+it.todo('test if valid ticket ID');
 it('returns an error if the ticket does not exist', async () => {
   const ticketId = mongoose.Types.ObjectId();
 
@@ -60,3 +57,5 @@ it('reserves a ticket', async () => {
     })
     .expect(201);
 });
+
+it.todo('emits an order created event');
