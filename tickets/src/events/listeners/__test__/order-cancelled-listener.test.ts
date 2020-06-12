@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 import { Message } from 'node-nats-streaming';
 import { OrderCancelledEvent } from '@tiktix/common';
-import { OrderCancelledListerner } from '../order-cancelled-listener';
+import { OrderCancelledListener } from '../order-cancelled-listener';
 import { natsWrapper } from '../../../nats-wrapper';
 import { Ticket } from '../../../models/ticket';
 
 const setup = async () => {
-  const listener = new OrderCancelledListerner(natsWrapper.client);
+  const listener = new OrderCancelledListener(natsWrapper.client);
 
   const orderId = new mongoose.Types.ObjectId().toHexString();
 
