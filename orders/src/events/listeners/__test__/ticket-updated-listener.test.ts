@@ -58,7 +58,7 @@ it('acks the message', async () => {
 it('does not call ack if the event has a skipped version number', async () => {
   const { data, msg, listener, ticket } = await setup();
 
-  //data.version = 1000;
+  data.version = 1000;
 
   try {
     await listener.onMessage(data, msg);
