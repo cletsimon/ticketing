@@ -3,6 +3,7 @@ client/node_modules
 tickets/node_modules
 orders/node_modules
 expiration/node_modules
+payments/node_modules
 client/.next
 todo.md
 .DS_Store
