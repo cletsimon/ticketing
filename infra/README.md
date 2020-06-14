@@ -18,7 +18,10 @@ STEPS to enable Cloud Build
 Creating a Secret (imperative approach) (change this later to declarative approach)
 
 ```
+// creating a secret
 kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+kubectl create secret generic strip-secret --from-literal STRIPE_KEY=lsjdflsdf
+kubectl get secrets
 ```
 
 Check Secrets
