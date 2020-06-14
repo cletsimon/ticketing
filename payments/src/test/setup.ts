@@ -4,6 +4,8 @@ import request from 'supertest';
 import { app } from '../app';
 import jwt from 'jsonwebtoken';
 
+process.env.STRIPE_KEY = ''; // api secret key here
+
 declare global {
   namespace NodeJS {
     interface Global {
